@@ -1,5 +1,5 @@
-const TEL = "+250791848862";
-const WA = "https://wa.me/250791848862";
+const TEL = "+250781888169";
+const WA = "https://wa.me/+250781888169";
 const MAP = "https://www.google.com/maps?q=KG+19+Ave,+Kibagabaga,+Kigali&output=embed";
 const DIRECTIONS = "https://www.google.com/maps/search/?api=1&query=KG+19+Ave+Kibagabaga+Kigali";
 
@@ -15,7 +15,7 @@ export function HomeBar({ go }) {
   return (
     <div className="hm-bar">
       <div className="hm-facts">
-        <div><b>Open 8am to 1am</b><span>Coffee, lunch, dinner and drinks</span></div>
+        <div><b>Open 7am to 11pm</b><span>Coffee, lunch, dinner and drinks</span></div>
         <div><b>KG 19 Ave, Kibagabaga</b><span>Kigali, Rwanda</span></div>
       </div>
       <div className="hm-cta">
@@ -63,8 +63,8 @@ export function Home({ go, hero }) {
             <h2>Contact us</h2>
             <dl>
               <dt>Address</dt><dd>KG 19 Ave, Kibagabaga, Kigali</dd>
-              <dt>Hours</dt><dd>8am to 1am</dd>
-              <dt>Phone</dt><dd><a href={`tel:${TEL}`}>0791 848 862</a></dd>
+              <dt>Hours</dt><dd>7am to 11pm</dd>
+              <dt>Phone</dt><dd><a href={`tel:${TEL}`}>+250781888169</a></dd>
               <dt>WhatsApp</dt><dd><a href={WA} target="_blank" rel="noreferrer">Chat on WhatsApp</a></dd>
             </dl>
             <div className="hm-cta">
@@ -93,8 +93,8 @@ export function Footer({ go }) {
         </div>
         <div>
           <p>KG 19 Ave, Kibagabaga, Kigali</p>
-          <p>Open 8am to 1am</p>
-          <p><a href={`tel:${TEL}`}>0791 848 862</a></p>
+          <p>Open 7am to 11pm</p>
+          <p><a href={`tel:${TEL}`}>+250781888169</a></p>
         </div>
       </div>
       <p className="hm-copy">© {new Date().getFullYear()} Maison du Goût <button className="hm-staff" onClick={() => go("staff")}>Staff login</button></p>
@@ -110,7 +110,7 @@ export function About({ go }) {
         <div className="hm-in hm-split">
           <div>
             <h1>About us</h1>
-            <p>Maison du Goût opens early and closes late, because good moments do not keep office hours. The day begins with a proper coffee at eight, moves through long lunches and unhurried afternoons, and carries on into the night with grilled plates and a well-made drink.</p>
+            <p>Maison du Goût opens early and closes late, because good moments do not keep office hours. The day begins with a proper coffee at seven, moves through long lunches and unhurried afternoons, and carries on into the night with grilled plates and a well-made drink.</p>
             <p>We cook with care and welcome with warmth. A quiet table for two, a family gathering, a birthday or a wedding reception: whatever the occasion, we hold ourselves to the promise on our sign, bon goût, bonne ambiance.</p>
             <p className="hm-quote">Bon café, bon moment. Bonne cuisine, belle âme.</p>
           </div>
@@ -148,7 +148,7 @@ export function Contact({ go }) {
             <dl>
               <dt>Address</dt><dd>KG 19 Ave, Kibagabaga, Kigali</dd>
               <dt>Hours</dt><dd>8am to 1am</dd>
-              <dt>Phone</dt><dd><a href={`tel:${TEL}`}>0791 848 862</a></dd>
+              <dt>Phone</dt><dd><a href={`tel:${TEL}`}>+250781888169</a></dd>
             </dl>
             <div className="hm-cta">
               <a className="btn" href={`tel:${TEL}`}>Call us</a>

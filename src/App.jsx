@@ -247,13 +247,13 @@ export default function App() {
   return (
     <div className="app">
       <style>{css}</style>
-      <header>
+      {view !== "staff" && <header>
         <button className="brand" onClick={() => go("home")}>
           <img src="/images/logo-gold.png" alt="Maison du Goût" />
         </button>
         <nav className="nav-mid">{nav("home", "Home")}{nav("about", "About")}{nav("contact", "Contact")}</nav>
         <nav className="nav-end">{nav("menu", "Menu")}{nav("reserve", "Reserve")}{nav("events", "Events")}<button className="btn" onClick={() => go("menu")}>Order now</button></nav>
-      </header>
+      </header>}
 
       {view === "home" && <Home go={go} hero={<Hero><HomeBar go={go} /></Hero>} />}
       {view === "about" && <About go={go} />}
@@ -340,14 +340,14 @@ export default function App() {
         </section>
       )}
 
-      {view === "staff" && <Staff api={API} />}
+      {view === "staff" && <Staff api={API} go={go} />}
 
       {view === "menu" && count > 0 && (
         <button className="bar" onClick={() => go("checkout")}>
           <span>{count} {count > 1 ? "items" : "item"}</span><span>View order, {fmt(total)}</span>
         </button>
       )}
-      <Footer go={go} />
+      {view !== "staff" && <Footer go={go} />}
     </div>
   );
 }
